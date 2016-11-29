@@ -1,0 +1,23 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "standard",
+    "plugin:flowtype/recommended"
+  ],
+  "plugins": [
+    "babel",
+    "flowtype",
+    "mocha"
+  ],
+  "env": {
+    "browser" : true
+  },
+  "rules": {
+    "mocha/no-exclusive-tests": "error"
+    "key-spacing"          : 0,
+    "jsx-quotes"           : [2, "prefer-single"],
+    "max-len"              : [2, 120, 2]
+  }
+}
+
+
