@@ -10,10 +10,10 @@
     "mocha"
   ],
   "rules": {
-    "mocha/no-exclusive-tests": "error"
-    "key-spacing"          : 0,
-    "jsx-quotes"           : [2, "prefer-single"],
-    "max-len"              : [2, 120, 2]
+    "mocha/no-exclusive-tests": "error",
+    "key-spacing": 0,
+    "jsx-quotes": [2, "prefer-single"],
+    "max-len": [2, 120, 2]
   }
 }
 
