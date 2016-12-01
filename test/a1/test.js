@@ -1,3 +1,4 @@
+const a1 = require('../../src/a1/sol.js')
 var assert = require('assert')
 describe('Array', function () {
   describe('#indexOf()', function () {

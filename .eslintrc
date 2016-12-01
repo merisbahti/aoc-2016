@@ -9,9 +9,6 @@
     "flowtype",
     "mocha"
   ],
-  "env": {
-    "browser" : true
-  },
   "rules": {
     "mocha/no-exclusive-tests": "error"
     "key-spacing"          : 0,

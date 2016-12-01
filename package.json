@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "test": "mocha $(find test/$SUBFOLDER -name '*.js') --require babel-core/register"
+    "test": "mocha $(find test/$SUBFOLDER -name '*.js') --compilers js:babel-core/register"
   },
   "dependencies": {
     "babel-core": "^6.18.2",
