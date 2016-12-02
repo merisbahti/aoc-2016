@@ -2,15 +2,15 @@
   "parser": "babel-eslint",
   "extends": [
     "standard",
-    "plugin:flowtype/recommended"
   ],
   "plugins": [
     "babel",
-    "flowtype",
+    "flowtype-errors",
     "mocha"
   ],
   "rules": {
     "mocha/no-exclusive-tests": "error",
+    "flowtype-errors/show-errors": 2,
     "key-spacing": 0,
     "jsx-quotes": [2, "prefer-single"],
     "max-len": [2, 120, 2]
