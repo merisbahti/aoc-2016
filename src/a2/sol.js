@@ -1,5 +1,8 @@
 /* @flow */
 
+const a = (x: number): number => x + 1
+a(parseInt('123'))
+
 type State = {
   number: number,
   foundNumbers: Array<number>

@@ -1,4 +1,5 @@
-const dist = (input) => {
+/* @flow */
+const dist = (input: string) => {
   const directions = parseInput(input)
   const startingState = {
     previousCoordinates: [[0, 0]],
@@ -17,12 +18,11 @@ const dist = (input) => {
 
   return {dist: Math.abs(ans.north) + Math.abs(ans.east), firstVisitedTwice: ans.firstVisitedTwice}
 }
+
 const parseInput = (input) => input.split(', ').map(s => { return {d: s[0], l: parseInt(s.slice(1))} })
 
 const changeDirection = (state, newDirection) => {
-  const jsModWhichIsNotWeird = (n, m) => {
-    return ((n % m) + m) % m
-  }
+  const jsModWhichIsNotWeird = (n, m) => ((n % m) + m) % m
   return Object.assign({}, state,
     {
       direction:
@@ -54,4 +54,4 @@ const calculateSteps = (state, steps) => {
   }, state)
 }
 
-module.exports = {dist, calculateSteps, changeDirection}
+module.exports = {dist}
