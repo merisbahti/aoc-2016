@@ -22,7 +22,7 @@ describe('solution', function () {
 describe('solution', function () {
   it('should return correct answer for problem', function (done) {
     const readFile = require('fs').readFile
-    readFile('test/a1/solInput', 'utf8', (err, contents) => {
+    readFile('test/a1/testInput', 'utf8', (err, contents) => {
       if (err) throw new Error(err)
       console.log(contents)
       const probAnswer = dist(contents).firstVisitedTwice
